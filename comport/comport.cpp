@@ -271,8 +271,8 @@ int main(int argc, char *argv[])
 
 
 		DWORD dwWritenSize = 0;
-		//TCHAR cmd[] = {TEXT("^XA^LH30,30^FO20,10^AD^FDEXAMPLE^FS^FO20,60^B3^FDAAA001^FS^PQ1,0,0,Y^XZ")};
-		TCHAR cmd[] = {TEXT("oLY")};
+		TCHAR cmd[] = {TEXT("^XA^LH30,30^FO20,10^AD^FDEXAMPLE^FS^FO20,60^B3^FDAAA001^FS^PQ1,0,0,Y^XZ")};
+		//TCHAR cmd[] = {TEXT("oLY")};
 
 
 
