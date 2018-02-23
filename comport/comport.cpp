@@ -130,6 +130,9 @@ Return Value:
     return NewDeviceInfoSet;
 }
 
+/**
+ * 提升进程权限
+*/
 BOOL EnablePrivilege(TCHAR * name, BOOL fEnable, HANDLE hToken)
 {
     BOOL                bRetVal;
@@ -244,7 +247,8 @@ int main(int argc, char *argv[])
 		HANDLE hDevice = CreateFile(
 			TEXT("\\\\?\\usb#vid_0a5f&pid_00c6#19j120201227#{a5dcbf10-6530-11d2-901f-00c04fb951ed}"),
 			//TEXT("\\\\?\\usb#vid_148f&pid_761a#1.0#{a5dcbf10-6530-11d2-901f-00c04fb951ed}"),
-			GENERIC_READ && GENERIC_WRITE,  
+			//GENERIC_READ && GENERIC_WRITE,  
+			GENERIC_READ | GENERIC_WRITE,  
 			//0,
             FILE_SHARE_READ && FILE_SHARE_WRITE,  
             NULL,  
